@@ -1,0 +1,279 @@
+
+/* Reset base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --verde: #8fb9a8;
+  --scuro: #2d4059;
+  --crema: #fdfaf7;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--crema);
+  color: var(--scuro);
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo { font-weight: bold; font-size: 1.2rem; color: var(--verde); }
+
+.menu a { text-decoration: none; color: var(--scuro); margin-left: 20px; font-size: 0.9rem; }
+
+.cta-small { background: var(--verde); color: white !important; padding: 8px 15px; border-radius: 20px; }
+
+.hero {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #fff 0%, #f0f4f3 100%);
+  text-align: center;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 20px; color: var(--scuro); }
+
+.cta-main {
+  display: inline-block;
+  margin-top: 30px;
+  background: var(--verde);
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-main:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(143, 185, 168, 0.4); }
+
+.services { padding: 80px 8%; text-align: center; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  transition: 0.3s;
+}
+
+.card:hover { border-top: 5px solid var(--verde); transform: translateY(-5px); }
+
+.about {
+  padding: 100px 8%;
+  background-color: white; /* Stacco visivo rispetto alla Hero */
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Due colonne uguali */
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin: 10px 0 20px;
+  color: var(--scuro);
+}
+
+.subtitle {
+  color: var(--verde);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Stile per la foto */
+.foto-cornice {
+  background: #e0eadd; /* Un verde chiarissimo di sfondo */
+  height: 450px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 20px 20px 0px var(--verde); /* Effetto design moderno */
+}
+
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .foto-cornice { height: 300px; }
+}
+
+.contact-section {
+  padding: 100px 8%;
+  background-color: var(--crema);
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  background: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366; /* Colore originale WhatsApp */
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+}
+
+.contact-hours {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact-hours h4 { margin-bottom: 20px; color: var(--verde); }
+
+.contact-hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.online-notice {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+.about-text {
+  text-align: justify; 
+}
+
+.formazione-lista {
+  padding-left: 20px;
+  margin-top: 10px;
+  text-align: left; 
+}
+
+.formazione-lista li {
+  margin-bottom: 8px; 
+  line-height: 1.5;
+}
+
+/* Layout a tre colonne */
+.hero-flex-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px; /* Larghezza massima del blocco */
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Gestione delle colonne di testo e immagini */
+.hero-content {
+  flex: 2; /* Diamo più spazio al testo centrale */
+  text-align: center;
+}
+
+.hero-side-img {
+  flex: 1; /* Spazio uguale per le immagini laterali */
+  display: flex;
+  justify-content: center;
+}
+
+/* Controllo dimensione delle immagini */
+.hero-side-img img {
+  width: 100%;
+  max-width: 180px; /* Regola questa misura per ingrandire o rimpicciolire le due immagini */
+  height: auto;
+  opacity: 0.75; /* Le rende delicate */
+}
+
+/* RESPONSIVE: Sui telefoni nascondiamo le immagini laterali per lasciare spazio al testo */
+@media (max-width: 768px) {
+  .hero-flex-layout {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .hero-side-img {
+    display: none; /* Nasconde le immagini sui display piccoli così il testo non si stringe */
+  }
+}
+
+/* Controllo dimensione delle immagini */
+.hero-side-img img {
+  width: 100%;
+  max-width: 250px; /* Prima era 180px: alzando questo valore l'immagine si ingrandisce */
+  height: auto;
+  opacity: 0.75; 
+  transition: all 0.3s ease; /* Rende morbido l'adattamento */
+}
