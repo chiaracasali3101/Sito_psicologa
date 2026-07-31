@@ -228,52 +228,63 @@ nav {
   line-height: 1.5;
 }
 
-/* Layout a tre colonne */
+/* ==========================================
+   HERO SECTION (Responsive & layout a 3 colonne)
+   ========================================== */
+
+/* Layout contenitore su Desktop */
 .hero-flex-layout {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px; /* Larghezza massima del blocco */
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
-/* Gestione delle colonne di testo e immagini */
 .hero-content {
-  flex: 2; /* Diamo più spazio al testo centrale */
+  flex: 2;
   text-align: center;
 }
 
 .hero-side-img {
-  flex: 1; /* Spazio uguale per le immagini laterali */
+  flex: 1;
   display: flex;
   justify-content: center;
 }
 
-/* Controllo dimensione delle immagini */
 .hero-side-img img {
   width: 100%;
-  max-width: 180px; /* Regola questa misura per ingrandire o rimpicciolire le due immagini */
+  max-width: 250px;
   height: auto;
-  opacity: 0.75; /* Le rende delicate */
+  opacity: 0.85;
+  transition: all 0.3s ease;
 }
 
-/* RESPONSIVE: Sui telefoni nascondiamo le immagini laterali per lasciare spazio al testo */
+/* --- ADATTAMENTO PER TELEFONI (Schermi < 768px) --- */
 @media (max-width: 768px) {
-  .hero-flex-layout {
-    flex-direction: column;
-    padding: 40px 20px;
+  .hero {
+    padding: 40px 5%; /* Riduce lo spazio vuoto in alto e in basso */
   }
-  .hero-side-img {
-    display: none; /* Nasconde le immagini sui display piccoli così il testo non si stringe */
-  }
-}
 
-/* Controllo dimensione delle immagini */
-.hero-side-img img {
-  width: 100%;
-  max-width: 250px; /* Prima era 180px: alzando questo valore l'immagine si ingrandisce */
-  height: auto;
-  opacity: 0.75; 
-  transition: all 0.3s ease; /* Rende morbido l'adattamento */
+  .hero-flex-layout {
+    flex-direction: column; /* Dispone gli elementi dall'alto verso il basso */
+    padding: 10px 0;
+  }
+
+  /* Nasconde le due immagini laterali per far spazio al testo */
+  .hero-side-img {
+    display: none; 
+  }
+
+  .hero h1 {
+    font-size: 2.1rem; /* Riduce la dimensione del titolo sul telefono */
+    margin-bottom: 15px;
+  }
+
+  .cta-main {
+    width: 100%; /* Rende il pulsante comodo da cliccare col pollice */
+    max-width: 280px;
+    padding: 12px 20px;
+  }
 }
