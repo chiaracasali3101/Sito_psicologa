@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 const isMenuOpen = ref(false);
-const nome = "Dr.ssa Bocchi Francesca";
+const nome = "Dr.ssa Francesca Bocchi";
 
 // Funzione unica per scorrere verso le sezioni
 const vaiASezione = (id: string) => {
@@ -95,19 +95,21 @@ const vaiASezione = (id: string) => {
             <h2>La mia formazione:</h2>
             
             <p>
-              Sono laureata in <strong>psicologia clinica</strong> presso l'Università di Bologna nel 2021 e sono iscritta nella sezione A dell'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna.
+              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero 
+
             </p>
             <p>
-              Attualmente sono specializzanda in <strong>psicoterapia psicoanalitica dell'età evolutiva</strong>. 
+              Attualmente sto ultimando la specializzazione in <strong>psicoterapia psicoanalitica dell'età evolutiva</strong> presso la SPP di Milano.
             </p>
             <p>
               Nel corso della mia formazione ho svolto esperienze di tirocinio presso: 
             </p>
             
             <ul class="formazione-lista">
-              <li>Il Servizio di supporto psicologico del reparto di Ostetricia, Ginecologia e Fisiopatologia della riproduzione umana del Policlinico Sant'Orsola di Bologna.</li>
-              <li>La Neuropsichiatria dell'infanzia e dell'adolescenza (NPIA) presso l'AUSL di Bologna.</li>
+              <li>⁠Il Servizio di supporto psicologico del reparto di Ostetricia, Ginecologia e Fisiopatologia della riproduzione umana del Policlinico Sant'Orsola di Bologna.</li>
+              <li>la Neuropsichiatria dell'infanzia e dell'adolescenza (NPIA) presso l'AUSL di Bologna.</li>
               <li>Gruppi di supporto psicologico alla genitorialità.</li>
+              <li>⁠⁠gruppi di supervisione clinica presso il servizio di consultazione clinica genitori-bambini presso il dipartimento Unibo</li>
             </ul>
           </div>
         </div>
