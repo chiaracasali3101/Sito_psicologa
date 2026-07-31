@@ -109,7 +109,7 @@ const vaiASezione = (id: string) => {
               <li>⁠Il Servizio di supporto psicologico del reparto di Ostetricia, Ginecologia e Fisiopatologia della riproduzione umana del Policlinico Sant'Orsola di Bologna.</li>
               <li>la Neuropsichiatria dell'infanzia e dell'adolescenza (NPIA) presso l'AUSL di Bologna.</li>
               <li>Gruppi di supporto psicologico alla genitorialità.</li>
-              <li>⁠⁠gruppi di supervisione clinica presso il servizio di consultazione clinica genitori-bambini presso il dipartimento Unibo</li>
+              <li>⁠Gruppi di supervisione clinica presso il servizio di consultazione clinica genitori-bambini presso il dipartimento Unibo</li>
             </ul>
           </div>
         </div>
