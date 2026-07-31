@@ -17,13 +17,21 @@ const vaiASezione = (id: string) => {
   <div class="site-wrapper">
     <nav>
       <div class="logo" @click="vaiASezione('home')" style="cursor:pointer">{{ nome }}</div>
-      <div class="menu">
-        <a href="#" @click.prevent="vaiASezione('home')">Home</a>
-        <a href="#" @click.prevent="vaiASezione('servizi')">Di cosa mi occupo</a>
-        <a href="#" @click.prevent="vaiASezione('chi-sono')">Chi Sono</a>
-        <a href="#" @click.prevent="vaiASezione('contatti')" class="cta-small">Contatti</a>
+
+      <!-- Pulsante Hamburger -->
+      <button class="hamburger" @click="isMenuOpen = !isMenuOpen" :class="{ 'is-active': isMenuOpen }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="menu" :class="{ 'open': isMenuOpen }">
+        <a href="#home" @click="isMenuOpen = false">Home</a>
+        <a href="#servizi" @click="isMenuOpen = false">Di cosa mi occupo</a>
+        <a href="#chi-sono" @click="isMenuOpen = false">Chi Sono</a>
+        <a href="#contatti" @click="isMenuOpen = false" class="cta-small">Contattami</a>
       </div>
-    </nav>
+</nav>
 
     <main>
       <header id="home" class="hero">
