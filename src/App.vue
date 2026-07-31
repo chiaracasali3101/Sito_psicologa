@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 
+const isMenuOpen = ref(false);
 const nome = "Dr.ssa Bocchi Francesca";
 
 // Funzione unica per scorrere verso le sezioni
