@@ -452,3 +452,23 @@
     text-align: left;
   }
 }
+
+/* sistemazione liste dentro le card */
+.card {
+  text-align: left; /* Allinea il contenuto della card a sinistra per un look ordinato */
+}
+
+.card h3 {
+  text-align: center; /* Mantiene solo il titolo al centro */
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style-position: inside; /* Mantiene i pallini vicini al testo */
+  padding-left: 0;
+}
+
+.card li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
