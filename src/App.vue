@@ -3,15 +3,17 @@ import { ref } from 'vue'
 import './style.css' 
 
 const isMenuOpen = ref(false);
-const nome = "Dr.ssa Francesca Bocchi";
+const nome = "Dott.ssa Francesca Bocchi";
 
 // Funzione unica per scorrere verso le sezioni
 const vaiASezione = (id: string) => {
+  if (id === 'home') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
   const elemento = document.getElementById(id);
   if (elemento) {
     elemento.scrollIntoView({ behavior: 'smooth' });
-  } else if (id === 'home') {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 };
 </script>
@@ -29,12 +31,12 @@ const vaiASezione = (id: string) => {
       </button>
 
       <div class="menu" :class="{ 'open': isMenuOpen }">
-            <a href="#" @click.prevent="vaiASezione('home'); isMenuOpen = false">Home</a>
-            <a href="#" @click.prevent="vaiASezione('descrizione'); isMenuOpen = false">Il mio approccio</a>
-            <a href="#" @click.prevent="vaiASezione('servizi'); isMenuOpen = false">Di cosa mi occupo</a>
-            <a href="#" @click.prevent="vaiASezione('chi-sono'); isMenuOpen = false">Chi Sono</a>
-            <a href="#" @click.prevent="vaiASezione('contatti'); isMenuOpen = false" class="cta-small">Contattami</a>
-        </div>
+        <a href="#" @click.prevent="vaiASezione('home'); isMenuOpen = false">Home</a>
+        <a href="#" @click.prevent="vaiASezione('descrizione'); isMenuOpen = false">Il mio approccio</a>
+        <a href="#" @click.prevent="vaiASezione('servizi'); isMenuOpen = false">Di cosa mi occupo</a>
+        <a href="#" @click.prevent="vaiASezione('chi-sono'); isMenuOpen = false">Chi Sono</a>
+        <a href="#" @click.prevent="vaiASezione('contatti'); isMenuOpen = false" class="cta-small">Contattami</a>
+      </div>
     </nav>
 
     <main>
@@ -46,7 +48,7 @@ const vaiASezione = (id: string) => {
           </div>
 
           <div class="hero-content">
-            <h1>Francesca Bocchi</h1>
+            <h1>Dott.ssa Francesca Bocchi</h1>
             <h2>psicologa clinica</h2>
             <p>Ricevo in studio a <strong>Bologna</strong> e <strong>online</strong>.</p>
             <a href="#" @click.prevent="vaiASezione('contatti')" class="cta-main">Contattami</a>
@@ -91,11 +93,11 @@ const vaiASezione = (id: string) => {
         </div>
       </section>
 
-       <!-- Descrizione -->
-       <section id="descrizione" class="description-section">
+      <!-- DESCRIZIONE / APPROCCIO -->
+      <section id="descrizione" class="description-section">
         <div class="description-container">
           <h2 class="quote-title">
-            “Ogni sintomo ha un significato, racconta una storia e parla di un bisogno”
+            “Ogni sintomo ha un significato, racconta una storia, parla di un bisogno”
           </h2>
 
           <div class="description-text">
@@ -144,7 +146,7 @@ const vaiASezione = (id: string) => {
             <h2>La mia formazione:</h2>
             
             <p>
-              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero  11243
+              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero 11243.
             </p>
             <p>
               Attualmente sto ultimando la specializzazione in <strong>psicoterapia psicoanalitica dell'età evolutiva</strong> presso la SPP di Milano.
