@@ -60,10 +60,10 @@ const vaiASezione = (id: string) => {
           <div class="card">
             <h3>Lavoro con:</h3>
             <ul>
-              <li>bambini</li>
-              <li>adolescenti</li>
-              <li>adulti</li>
-              <li>genitori</li>
+              <li>Bambini</li>
+              <li>Adolescenti</li>
+              <li>Adulti</li>
+              <li>Genitori</li>
             </ul>
           </div>
           <div class="card">
