@@ -29,12 +29,12 @@ const vaiASezione = (id: string) => {
       </button>
 
       <div class="menu" :class="{ 'open': isMenuOpen }">
-        <a href="#home" @click="isMenuOpen = false">Home</a>
-        <a href="#descrizione" @click="isMenuOpen = false">Il mio approccio</a>
-        <a href="#servizi" @click="isMenuOpen = false">Di cosa mi occupo</a>
-        <a href="#chi-sono" @click="isMenuOpen = false">Chi Sono</a>
-        <a href="#contatti" @click="isMenuOpen = false" class="cta-small">Contattami</a>
-      </div>
+            <a href="#" @click.prevent="vaiASezione('home'); isMenuOpen = false">Home</a>
+            <a href="#" @click.prevent="vaiASezione('descrizione'); isMenuOpen = false">Il mio approccio</a>
+            <a href="#" @click.prevent="vaiASezione('servizi'); isMenuOpen = false">Di cosa mi occupo</a>
+            <a href="#" @click.prevent="vaiASezione('chi-sono'); isMenuOpen = false">Chi Sono</a>
+            <a href="#" @click.prevent="vaiASezione('contatti'); isMenuOpen = false" class="cta-small">Contattami</a>
+        </div>
     </nav>
 
     <main>
