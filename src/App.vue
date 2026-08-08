@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import './style.css' 
 
 const isMenuOpen = ref(false);
 const nome = "Dr.ssa Francesca Bocchi";
@@ -29,16 +30,17 @@ const vaiASezione = (id: string) => {
 
       <div class="menu" :class="{ 'open': isMenuOpen }">
         <a href="#home" @click="isMenuOpen = false">Home</a>
+        <a href="#descrizione" @click="isMenuOpen = false">Il mio approccio</a>
         <a href="#servizi" @click="isMenuOpen = false">Di cosa mi occupo</a>
         <a href="#chi-sono" @click="isMenuOpen = false">Chi Sono</a>
         <a href="#contatti" @click="isMenuOpen = false" class="cta-small">Contattami</a>
       </div>
-</nav>
+    </nav>
 
     <main>
+      <!-- HERO -->
       <header id="home" class="hero">
         <div class="hero-flex-layout">
-          
           <div class="hero-side-img left-img">
             <img src="/immagini/radice.png" alt="Grafica sinistra">
           </div>
@@ -53,50 +55,96 @@ const vaiASezione = (id: string) => {
           <div class="hero-side-img right-img">
             <img src="/immagini/radice.png" alt="Grafica destra">
           </div>
-
         </div>
       </header>
 
-      <section id="servizi" class="services">
-        <h2>Mi occupo di:</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Valutazione clinica: </h3>
-            <p>percorsi di consultazione per bambini, adolescenti e adulti, volti ad accogliere il disagio, comprenderne il significato profondo e individuare il percorso terapeutico.</p>
-          </div>
-          <div class="card">
-            <h3>Percorsi di supporto psicologico:</h3>
-            <p>per bambini, adolescenti e adulti.</p>
-          </div>
-          <div class="card">
-            <h3>Supporto alla genitorialità:</h3>
-            <p>interventi di sostegno dedicati ai genitori e percorsi di accompagnamento alla terapia del filio.</p>
+      <!-- NUOVA SEZIONE DESCRIZIONE -->
+      <section id="descrizione" class="description-section">
+        <div class="description-container">
+          <h2 class="quote-title">
+            “Ogni sintomo ha un significato, racconta una storia e parla di un bisogno”
+          </h2>
+
+          <div class="description-text">
+            <p>
+              Credo che ogni persona porti con sé una storia unica e che ogni forma di sofferenza meriti di essere ascoltata prima ancora che interpretata.
+            </p>
+            <p>
+              Nel mio lavoro mi occupo della valutazione e dell'intervento clinico del disagio psicologico che può manifestarsi nelle diverse fasi della vita, dall'infanzia all'adolescenza fino all'età adulta, accompagnando la persona anche nei momenti di cambiamento e nei passaggi evolutivi più significativi.
+            </p>
+            <p>
+              Accompagno bambini, adolescenti e adulti in un percorso di comprensione di sé e del proprio disagio, che può esprimersi attraverso sintomi emotivi, relazionali, comportamentali o psicosomatici.
+            </p>
+            <p>
+              Nel mio approccio ad orientamento psicodinamico, il sintomo non è considerato soltanto come qualcosa da alleviare o eliminare, ma anche come un'espressione del mondo interno, di bisogni, conflitti o aspetti della propria storia che talvolta faticano a trovare altre vie di espressione. Per questo viene accolto e compreso all'interno della storia unica di ciascuno, per coglierne il significato profondo.
+            </p>
+            <p>
+              Il percorso psicologico è uno spazio di ascolto, riflessione e scoperta nel quale la relazione terapeutica rappresenta uno strumento di comprensione e cambiamento per sviluppare modalità più autentiche e consapevoli di vivere le relazioni e affrontare i momenti di difficoltà.
+            </p>
+            <p>
+              È rivolto sia a chi sta vivendo un momento di sofferenza e desidera un supporto psicologico, sia a chi sente il bisogno di conoscersi più a fondo e comprendere meglio il proprio modo di vivere le relazioni, le emozioni e le esperienze.
+            </p>
+            <p>
+              Con bambini e adolescenti il percorso è orientato a comprendere il significato del disagio all'interno della fase evolutiva che stanno attraversando. Attraverso strumenti specifici per l'età evolutiva, offro uno spazio in cui emozioni e difficoltà possano essere accolte e trasformate sostenendo il naturale processo di sviluppo.
+            </p>
+            <p>
+              Il percorso di sostegno psicologico può essere anche rivolto ai genitori per accompagnarli nelle difficoltà legate al ruolo genitoriale e nella relazione con i figli.
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- SERVIZI -->
+      <section id="servizi" class="services">
+        <h2>Mi occupo di:</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Lavoro con:</h3>
+            <ul>
+              <li>bambini</li>
+              <li>adolescenti</li>
+              <li>adulti</li>
+              <li>coppie genitoriali</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Mi occupo di:</h3>
+            <ul>
+              <li>Disagio emotivo, relazionale, comportamentale e psicosomatico</li>
+              <li>Difficoltà evolutive in età evolutiva</li>
+              <li>Momenti di cambiamento e transizioni di vita e di ruoli</li>
+              <li>Difficoltà genitoriali</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Interventi:</h3>
+            <ul>
+              <li>Consultazione e valutazione clinica del disagio e dei sintomi</li>
+              <li>Interventi di supporto psicologico</li>
+              <li>Sostegno alla genitorialità</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHI SONO -->
       <section id="chi-sono" class="about">
         <div class="about-grid">
           <div class="about-image">
-            <div class="about-image">
-              <div class="foto-cornice" style="overflow: hidden; display: flex; width: 100%; height: 100%;">
-                <img 
-                  src="/immagini/radice.png" 
-                  alt="radice" 
-                  style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
-                >
-              </div>
+            <div class="foto-cornice" style="overflow: hidden; display: flex; width: 100%; height: 100%;">
+              <img 
+                src="/immagini/radice.png" 
+                alt="radice" 
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+              >
             </div>
           </div>
           <div class="about-text">
             <span class="subtitle">Chi sono</span>
-            <div style="text-align: center; margin: 60px 0;">
-      </div>
             <h2>La mia formazione:</h2>
             
             <p>
-              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero 
-
+              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero...
             </p>
             <p>
               Attualmente sto ultimando la specializzazione in <strong>psicoterapia psicoanalitica dell'età evolutiva</strong> presso la SPP di Milano.
@@ -106,22 +154,22 @@ const vaiASezione = (id: string) => {
             </p>
             
             <ul class="formazione-lista">
-              <li>⁠Il Servizio di supporto psicologico del reparto di Ostetricia, Ginecologia e Fisiopatologia della riproduzione umana del Policlinico Sant'Orsola di Bologna.</li>
-              <li>la Neuropsichiatria dell'infanzia e dell'adolescenza (NPIA) presso l'AUSL di Bologna.</li>
+              <li>Il Servizio di supporto psicologico del reparto di Ostetricia, Ginecologia e Fisiopatologia della riproduzione umana del Policlinico Sant'Orsola di Bologna.</li>
+              <li>La Neuropsichiatria dell'infanzia e dell'adolescenza (NPIA) presso l'AUSL di Bologna.</li>
               <li>Gruppi di supporto psicologico alla genitorialità.</li>
-              <li>⁠Gruppi di supervisione clinica presso il servizio di consultazione clinica genitori-bambini presso il dipartimento Unibo</li>
+              <li>Gruppi di supervisione clinica presso il servizio di consultazione clinica genitori-bambini presso il dipartimento Unibo.</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- CONTATTI -->
       <section id="contatti" class="contact-section">
         <div class="contact-container">
           <span class="subtitle">Contatti</span>
           
           <div class="contact-grid">
             <div class="contact-info">
-              
               <div class="info-item">
                 <span class="icon">📧</span>
                 <div>
@@ -152,7 +200,7 @@ const vaiASezione = (id: string) => {
                   
                   <div class="map-box" style="margin-top: 15px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); width: 100%; max-width: 450px;">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.68010040811!2d11.368381076196005!3d44.501221271074584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd49bca59465f%3A0xe5ff461239bf1e6!2sVia%20Serafino%20Calindri%2C%2010%2C%2040139%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1718653000000!5m2!1sit!2sit" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.68010040811!2d11.368381076196005!3d44.501221271074584!3d44.501221271074584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd49bca59465f%3A0xe5ff461239bf1e6!2sVia%20Serafino%20Calindri%2C%2010%2C%2040139%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1718653000000!5m2!1sit!2sit" 
                       width="100%" 
                       height="280" 
                       style="border:0;" 
@@ -163,10 +211,14 @@ const vaiASezione = (id: string) => {
                   </div>
                 </div>
               </div>
-            </div> </div> </div> </section>
-</main>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <p>© 2026 {{ nome }} - Psicologa </p>
+      <p>© 2026 {{ nome }} - Psicologa</p>
     </footer>
   </div>
 </template>

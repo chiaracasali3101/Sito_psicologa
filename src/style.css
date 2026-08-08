@@ -403,3 +403,52 @@
       font-weight: 500;
     }
   }
+
+  /* ==========================================
+   SEZIONE DESCRIZIONE / APPROCCIO
+   ========================================== */
+.description-section {
+  padding: 80px 8%;
+  background-color: white;
+}
+
+.description-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-title {
+  font-size: 2.2rem;
+  font-weight: 800; /* "Cicciotto" / Molto marcato */
+  color: var(--verde); /* Colore verde del tuo tema */
+  line-height: 1.3;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.description-text {
+  text-align: justify;
+}
+
+.description-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .description-section {
+    padding: 50px 5%;
+  }
+
+  .quote-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .description-text {
+    text-align: left;
+  }
+}
