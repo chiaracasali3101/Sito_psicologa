@@ -55,7 +55,7 @@ const vaiASezione = (id: string) => {
 
       <!-- SERVIZI -->
       <section id="servizi" class="services">
-        <h2>Mi occupo di:</h2>
+
         <div class="grid">
           <div class="card">
             <h3>Lavoro con:</h3>
@@ -63,7 +63,7 @@ const vaiASezione = (id: string) => {
               <li>bambini</li>
               <li>adolescenti</li>
               <li>adulti</li>
-              <li>coppie genitoriali</li>
+              <li>genitori</li>
             </ul>
           </div>
           <div class="card">
@@ -104,7 +104,7 @@ const vaiASezione = (id: string) => {
               Accompagno bambini, adolescenti e adulti in un percorso di comprensione di sé e del proprio disagio, che può esprimersi attraverso sintomi emotivi, relazionali, comportamentali o psicosomatici.
             </p>
             <p>
-              Nel mio approccio ad orientamento psicodinamico, il sintomo non è considerato soltanto come qualcosa da alleviare o eliminare, ma anche come un'espressione del mondo interno, di bisogni, conflitti o aspetti della propria storia che talvolta faticano a trovare altre vie di espressione. Per questo viene accolto e compreso all'interno della storia unica di ciascuno, per coglierne il significato profondo.
+              Nel mio approccio ad orientamento psicoanalitico, il sintomo non è considerato soltanto come qualcosa da alleviare o eliminare, ma anche come un'espressione del mondo interno, di bisogni, conflitti o aspetti della propria storia che talvolta faticano a trovare altre vie di espressione. Per questo viene accolto e compreso all'interno della storia unica di ciascuno, per coglierne il significato profondo.
             </p>
             <p>
               Il percorso psicologico è uno spazio di ascolto, riflessione e scoperta nel quale la relazione terapeutica rappresenta uno strumento di comprensione e cambiamento per sviluppare modalità più autentiche e consapevoli di vivere le relazioni e affrontare i momenti di difficoltà.
