@@ -58,8 +58,41 @@ const vaiASezione = (id: string) => {
         </div>
       </header>
 
-      <!-- NUOVA SEZIONE DESCRIZIONE -->
-      <section id="descrizione" class="description-section">
+      <!-- SERVIZI -->
+      <section id="servizi" class="services">
+        <h2>Mi occupo di:</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Lavoro con:</h3>
+            <ul>
+              <li>bambini</li>
+              <li>adolescenti</li>
+              <li>adulti</li>
+              <li>coppie genitoriali</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Mi occupo di:</h3>
+            <ul>
+              <li>Disagio emotivo, relazionale, comportamentale e psicosomatico</li>
+              <li>Difficoltà evolutive in età evolutiva</li>
+              <li>Momenti di cambiamento e transizioni di vita e di ruoli</li>
+              <li>Difficoltà genitoriali</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Interventi:</h3>
+            <ul>
+              <li>Consultazione e valutazione clinica del disagio e dei sintomi</li>
+              <li>Interventi di supporto psicologico</li>
+              <li>Sostegno alla genitorialità</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+       <!-- Descrizione -->
+       <section id="descrizione" class="description-section">
         <div class="description-container">
           <h2 class="quote-title">
             “Ogni sintomo ha un significato, racconta una storia e parla di un bisogno”
@@ -90,39 +123,6 @@ const vaiASezione = (id: string) => {
             <p>
               Il percorso di sostegno psicologico può essere anche rivolto ai genitori per accompagnarli nelle difficoltà legate al ruolo genitoriale e nella relazione con i figli.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVIZI -->
-      <section id="servizi" class="services">
-        <h2>Mi occupo di:</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Lavoro con:</h3>
-            <ul>
-              <li>bambini</li>
-              <li>adolescenti</li>
-              <li>adulti</li>
-              <li>coppie genitoriali</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Mi occupo di:</h3>
-            <ul>
-              <li>Disagio emotivo, relazionale, comportamentale e psicosomatico</li>
-              <li>Difficoltà evolutive in età evolutiva</li>
-              <li>Momenti di cambiamento e transizioni di vita e di ruoli</li>
-              <li>Difficoltà genitoriali</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Interventi:</h3>
-            <ul>
-              <li>Consultazione e valutazione clinica del disagio e dei sintomi</li>
-              <li>Interventi di supporto psicologico</li>
-              <li>Sostegno alla genitorialità</li>
-            </ul>
           </div>
         </div>
       </section>
