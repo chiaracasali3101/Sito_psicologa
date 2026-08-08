@@ -43,19 +43,12 @@ const vaiASezione = (id: string) => {
       <!-- HERO -->
       <header id="home" class="hero">
         <div class="hero-flex-layout">
-          <div class="hero-side-img left-img">
-            <img src="/immagini/radice.png" alt="Grafica sinistra">
-          </div>
 
           <div class="hero-content">
             <h1>Dott.ssa Francesca Bocchi</h1>
             <h2>psicologa clinica</h2>
             <p>Ricevo in studio a <strong>Bologna</strong> e <strong>online</strong>.</p>
             <a href="#" @click.prevent="vaiASezione('contatti')" class="cta-main">Contattami</a>
-          </div>
-
-          <div class="hero-side-img right-img">
-            <img src="/immagini/radice.png" alt="Grafica destra">
           </div>
         </div>
       </header>
