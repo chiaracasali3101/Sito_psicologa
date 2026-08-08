@@ -144,7 +144,7 @@ const vaiASezione = (id: string) => {
             <h2>La mia formazione:</h2>
             
             <p>
-              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero...
+              Mi sono laureata in <strong>Psicologia clinica</strong> presso l'Università di Bologna nel 2021. Sono iscritta all'Albo professionale dell'Ordine degli psicologi dell'Emilia Romagna, sezione A, con il numero  11243
             </p>
             <p>
               Attualmente sto ultimando la specializzazione in <strong>psicoterapia psicoanalitica dell'età evolutiva</strong> presso la SPP di Milano.
