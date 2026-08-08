@@ -195,7 +195,7 @@ const vaiASezione = (id: string) => {
                   
                   <div class="map-box" style="margin-top: 15px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); width: 100%; max-width: 450px;">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.68010040811!2d11.368381076196005!3d44.501221271074584!3d44.501221271074584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd49bca59465f%3A0xe5ff461239bf1e6!2sVia%20Serafino%20Calindri%2C%2010%2C%2040139%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1718653000000!5m2!1sit!2sit" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.68009899629!2d11.370956!3d44.5012213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2b0032fb18b3%3A0x32da43a870afa165!2sPsicologa%20Dott.ssa%20Francesca%20Bocchi!5e0!3m2!1sit!2sit!4v1786187142182!5m2!1sit!2sit"  
                       width="100%" 
                       height="280" 
                       style="border:0;" 
